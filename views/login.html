@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <!-- Stylessheets-->
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/forms.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,10 @@
      <!-- fontawesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class=" forms login">
     <header>
+        <div class="tablet">
+        <div class="busqueda1">
         <img  id="logo" src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
         <div class="busqueda">
             <input type="text" placeholder="Buscar porductos, marcas" class="input">
@@ -23,9 +25,16 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-        
-        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav clas> 
+    </div>
+    <div>
+    <div class="parrafo">
+        <p class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i> 
+            Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        </div>
+    </div>
+        <nav class="menu"> 
             <br>
             <ul> 
                 <li> <a href=""> Ofertas</a></li>
@@ -49,18 +58,18 @@
             <h3>Ingresá</h3>
             <form action="">
                 <div>
-                    <label for="nombreUsuario">Nombre de usuario:</label>
-                    <input type="text" class="input-style" name="nombreUsuario" id="nombreUsuario">
+                    
+                    <input type="text" class="input-style" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuario">
                     <span class="error-message">Ingrese nombre usuario</span>
                 </div>
                 <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" class="input-style" form="password" value="password" id="password">
+                    
+                    <input type="password" class="input-style" form="password" value="password" id="password" placeholder=" Contraseña">
                     <span class="error-message">Ingrese su contraseña</span>
                 </div>
                 <div class="btn-container">
                     <span class="error-message">Hubo un error en el registro</span>
-                    <button type="submit" class="btn btn-submit"><a href="/">Enviar</a></button> <!-- vuelvo a home -->
+                    <button type="submit" class="btn btn-submit"><a href="/" class=" a2">Enviar</a></button> <!-- vuelvo a home -->
                 </div>
             </form>
         </section>

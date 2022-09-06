@@ -31,7 +31,12 @@ body.forms {
     padding: 0 1rem;
 }
 body.forms a {
-    color: darkblue;
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+body.forms a.a2{
+    color: white;
     font-size: 0.8rem;
     text-decoration: none;
 }
@@ -40,7 +45,7 @@ body.forms h3 {
     text-align: center;
 }
 
-body.forms section.register-container{
+body.forms section.register-container {
     border-radius: 10px;
     padding: 1rem;
     background: var(--color-grisClaro);
@@ -70,6 +75,7 @@ body.forms form span.error-message { /* displya: none */
     color: tomato;
     font-size: 10px;
     margin: 0 auto;
+    display: none;
 }
 form span.error-message{
     text-align: center;
@@ -78,11 +84,12 @@ form span.error-message{
 body.forms form input.input-style,
 body.forms form input.input-select {
     border: none;
-    border-radius: 1rem;
+    border-radius: 5px;
     height: 2.5rem;
     padding: 0.5rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1.5rem;
     background-color: white;
+    width: 100%;
 }
 
 input:focus{
@@ -128,4 +135,17 @@ button.btn {
 .btn-edit:hover {
     color: rgb(243, 243, 243);
 
+}
+
+@media(min-width:768px) {
+    button.btn {
+        border: none;
+        border-radius: 5px;
+        height: 2.5rem;
+        text-transform: uppercase;
+        width: 41.5rem;
+        cursor: pointer;
+        margin: 0.2rem auto 0;
+        background-color: var(--color-celeste);
+    }
 }
